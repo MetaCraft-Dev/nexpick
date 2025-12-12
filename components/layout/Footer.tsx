@@ -16,6 +16,24 @@ export default function Footer() {
             <p className="mt-2 text-sm text-neutral-400">微信/邮箱渠道，7×24 支持。</p>
           </div>
         </div>
+        <div className="mt-10">
+          <h4 className="text-sm font-semibold text-white">热门搜索</h4>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {['Netflix 合租','ChatGPT 拼车','YouTube 家庭组','Disney+ 会员','Spotify 家庭组'].map((t) => (
+              <span key={t} className="rounded-md border border-neutral-800 px-2 py-1 text-[11px] text-neutral-300">{t}</span>
+            ))}
+          </div>
+          <div className="mt-8 space-y-3">
+            <details className="rounded-md border border-neutral-800 bg-neutral-900/60 p-3">
+              <summary className="cursor-pointer text-sm text-white">合租账号合法吗?</summary>
+              <p className="mt-2 text-sm text-neutral-400">请遵守各平台使用条款，选择正规渠道与合规套餐，避免共享密码与违反地区政策。</p>
+            </details>
+            <details className="rounded-md border border-neutral-800 bg-neutral-900/60 p-3">
+              <summary className="cursor-pointer text-sm text-white">如何使用优惠码?</summary>
+              <p className="mt-2 text-sm text-neutral-400">在商家下单页输入优惠码可享折扣，如无效请联系商家客服或更换渠道。</p>
+            </details>
+          </div>
+        </div>
         <div className="mt-10 border-t border-neutral-800 pt-6 text-center text-xs text-neutral-500">
           Copyright © 2025 NexPick.cc 版权所有
         </div>
@@ -23,4 +41,3 @@ export default function Footer() {
     </footer>
   )
 }
-
